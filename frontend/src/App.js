@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import Terms from "./pages/Terms";
 import { Toaster } from "./components/ui/toaster";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/terms" element={<Terms />} />
         </Routes>
       </BrowserRouter>
       <Toaster />
