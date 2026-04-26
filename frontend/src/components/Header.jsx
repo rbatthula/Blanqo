@@ -62,11 +62,11 @@ const Header = () => {
 
         <div className="hidden lg:flex items-center gap-4">
           <a
-            href="tel:+919999999999"
+            href="tel:+919000343483"
             className="flex items-center gap-2 text-white/80 hover:text-[#c9a96e] transition-colors"
           >
             <Phone className="w-4 h-4" />
-            <span className="text-sm tracking-wider">+91 99999 99999</span>
+            <span className="text-sm tracking-wider">+91 90003 43483</span>
           </a>
           <Button
             onClick={() => scrollTo("#booking")}
