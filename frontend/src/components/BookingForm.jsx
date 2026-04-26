@@ -82,9 +82,9 @@ const BookingForm = () => {
             <div className="h-10 w-px bg-[#0b1c2c]/15" />
             <div>
               <p className="text-3xl font-light text-[#0b1c2c]" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
-                9+
+                Hyd
               </p>
-              <p className="tracking-wider uppercase text-xs mt-1">Cities</p>
+              <p className="tracking-wider uppercase text-xs mt-1">Now Live</p>
             </div>
           </div>
         </div>

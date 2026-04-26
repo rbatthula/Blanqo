@@ -1,18 +1,8 @@
-import React, { useState } from "react";
-import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
+import React from "react";
+import { Quote } from "lucide-react";
 import { testimonials } from "../data/mock";
 
 const Testimonials = () => {
-  const [idx, setIdx] = useState(0);
-  const perView = 1;
-  const total = testimonials.length;
-
-  const prev = () => setIdx((p) => (p - 1 + total) % total);
-  const next = () => setIdx((p) => (p + 1) % total);
-
-  const current = testimonials[idx];
-  const nextOne = testimonials[(idx + 1) % total];
-
   return (
     <section id="reviews" className="bg-[#0b1c2c] py-24 md:py-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
@@ -30,36 +20,40 @@ const Testimonials = () => {
             >
               What Our <span className="italic text-[#c9a96e]">Customers</span> Say
             </h2>
-            <p className="text-white/60 text-base md:text-lg leading-relaxed mb-10">
+            <p className="text-white/60 text-base md:text-lg leading-relaxed mb-8">
               Garment care for important people, by people who care.
             </p>
-
-            <div className="flex items-center gap-4">
-              <button
-                onClick={prev}
-                aria-label="Previous"
-                className="w-12 h-12 rounded-full border border-white/20 hover:border-[#c9a96e] hover:bg-[#c9a96e] flex items-center justify-center text-white hover:text-[#0b1c2c] transition-colors"
-              >
-                <ChevronLeft className="w-5 h-5" />
-              </button>
-              <button
-                onClick={next}
-                aria-label="Next"
-                className="w-12 h-12 rounded-full border border-white/20 hover:border-[#c9a96e] hover:bg-[#c9a96e] flex items-center justify-center text-white hover:text-[#0b1c2c] transition-colors"
-              >
-                <ChevronRight className="w-5 h-5" />
-              </button>
-              <span className="text-white/50 ml-3 text-sm tracking-widest">
-                {String(idx + 1).padStart(2, "0")} /{" "}
-                {String(total).padStart(2, "0")}
-              </span>
+            <div className="inline-flex items-center gap-4 border-t border-b border-white/15 py-4 px-1">
+              <div>
+                <p
+                  className="text-3xl font-light text-white"
+                  style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                >
+                  4.9
+                </p>
+                <p className="text-[10px] tracking-[0.3em] uppercase text-white/50 mt-1">
+                  Avg. Rating
+                </p>
+              </div>
+              <div className="h-10 w-px bg-white/15" />
+              <div>
+                <p
+                  className="text-3xl font-light text-white"
+                  style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                >
+                  500+
+                </p>
+                <p className="text-[10px] tracking-[0.3em] uppercase text-white/50 mt-1">
+                  Happy Clients
+                </p>
+              </div>
             </div>
           </div>
 
           <div className="lg:col-span-3 grid md:grid-cols-2 gap-6">
-            {[current, nextOne].map((t, i) => (
+            {testimonials.map((t) => (
               <div
-                key={t.id + "-" + i}
+                key={t.id}
                 className="relative bg-[#132b42] p-8 md:p-10 border border-white/5 hover:border-[#c9a96e]/30 transition-colors duration-500"
               >
                 <Quote
@@ -67,7 +61,7 @@ const Testimonials = () => {
                   strokeWidth={1}
                 />
                 <p className="text-white/80 text-base md:text-lg leading-relaxed mb-8 relative">
-                  “{t.quote}”
+                  &ldquo;{t.quote}&rdquo;
                 </p>
                 <div className="pt-6 border-t border-white/10">
                   <p

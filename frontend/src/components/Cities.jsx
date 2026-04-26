@@ -1,10 +1,7 @@
 import React from "react";
-import { MapPin } from "lucide-react";
-import { cities } from "../data/mock";
+import { MapPin, Sparkles } from "lucide-react";
 
 const Cities = () => {
-  const marquee = [...cities, ...cities, ...cities];
-
   return (
     <section id="cities" className="bg-white py-24 md:py-32 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
@@ -20,39 +17,50 @@ const Cities = () => {
             className="text-4xl md:text-5xl lg:text-6xl font-light text-[#0b1c2c] leading-[1.1] mb-5"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
-            Serving You <span className="italic text-[#8a6f3e]">Across India</span>
+            Now Serving <span className="italic text-[#8a6f3e]">Hyderabad</span>
           </h2>
           <p className="text-[#4a5568] text-base md:text-lg leading-relaxed">
-            Find Blanqo in 9 major cities and growing.
+            Our flagship store is now open. More cities coming soon.
           </p>
         </div>
-      </div>
 
-      <div className="relative mb-14">
-        <div className="absolute left-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
-        <div className="flex gap-12 md:gap-20 animate-marquee whitespace-nowrap py-6">
-          {marquee.map((c, idx) => (
-            <div
-              key={idx}
-              className="flex items-center gap-3 text-[#0b1c2c]"
-            >
-              <MapPin className="w-5 h-5 text-[#c9a96e]" strokeWidth={1.5} />
-              <span
-                className="text-3xl md:text-4xl font-light tracking-wide"
-                style={{ fontFamily: "'Cormorant Garamond', serif" }}
-              >
-                {c}
-              </span>
+        <div className="max-w-2xl mx-auto">
+          <div className="relative bg-[#f5f1ea] border border-[#c9a96e]/25 p-10 md:p-14 text-center group hover:border-[#c9a96e] transition-colors duration-500">
+            <div className="absolute top-6 right-6 flex items-center gap-2 text-[10px] tracking-[0.3em] uppercase text-[#8a6f3e] bg-white px-3 py-1.5 border border-[#c9a96e]/30">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#16a34a] animate-pulse" />
+              Now Open
             </div>
-          ))}
-        </div>
-      </div>
 
-      <div className="text-center">
-        <button className="text-[#0b1c2c] border-b border-[#0b1c2c]/40 hover:border-[#c9a96e] hover:text-[#8a6f3e] pb-1 tracking-[0.25em] text-xs uppercase font-medium transition-colors">
-          View All Stores
-        </button>
+            <div className="mx-auto mb-6 w-16 h-16 rounded-full bg-white border border-[#c9a96e]/30 flex items-center justify-center group-hover:bg-[#c9a96e] transition-colors duration-500">
+              <MapPin
+                className="w-7 h-7 text-[#8a6f3e] group-hover:text-white transition-colors duration-500"
+                strokeWidth={1.4}
+              />
+            </div>
+
+            <p className="text-[#c9a96e] text-xs tracking-[0.4em] uppercase mb-3">
+              Flagship Store
+            </p>
+            <h3
+              className="text-4xl md:text-5xl font-light text-[#0b1c2c] mb-3"
+              style={{ fontFamily: "'Cormorant Garamond', serif" }}
+            >
+              West Hyderabad
+            </h3>
+            <p className="text-[#4a5568] text-sm md:text-base leading-relaxed max-w-md mx-auto">
+              Visit our boutique garment care studio in West Hyderabad — where
+              every piece is treated with precision and care.
+            </p>
+
+            <div className="mt-8 inline-flex items-center gap-3 text-[#0b1c2c]">
+              <Sparkles className="w-4 h-4 text-[#c9a96e]" strokeWidth={1.5} />
+              <span className="text-xs tracking-[0.3em] uppercase">
+                More cities opening soon
+              </span>
+              <Sparkles className="w-4 h-4 text-[#c9a96e]" strokeWidth={1.5} />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

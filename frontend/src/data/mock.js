@@ -113,74 +113,22 @@ export const processSteps = [
   },
 ];
 
-export const cities = [
-  "Mumbai",
-  "Delhi",
-  "Bengaluru",
-  "Hyderabad",
-  "Jaipur",
-  "Ahmedabad",
-  "Surat",
-  "Pune",
-  "Kolkata",
-];
+export const cities = ["West Hyderabad"];
 
 export const testimonials = [
   {
     id: 1,
-    name: "Ravi Choksi",
-    location: "Mumbai",
+    name: "Swaroop Sharma",
+    location: "Banjara Hills, Hyderabad",
     quote:
       "Blanqo has genuinely excellent services. Now I don't worry about stains on my clothes as I am confident Blanqo will remove them. It is my preferred laundry place.",
   },
   {
     id: 2,
-    name: "Unnati Khambata",
-    location: "Delhi",
+    name: "Chandni Srivatsav",
+    location: "Banjara Hills, Hyderabad",
     quote:
       "I really like Blanqo and appreciate the service and staff. The work done here is very professional and they make customers feel reassured and comfortable.",
-  },
-  {
-    id: 3,
-    name: "Keshav Mitra",
-    location: "Bengaluru",
-    quote:
-      "A very nice and modern unit-cum-store for dry cleaning. Qualitative work, attentive and decent staff. A well-managed place.",
-  },
-  {
-    id: 4,
-    name: "Aman Grover",
-    location: "Jaipur",
-    quote:
-      "One stop shop for all dry cleaning needs. Advanced in technology, cost effective, and provides great service without any hassles.",
-  },
-  {
-    id: 5,
-    name: "Shakib Mansuri",
-    location: "Surat",
-    quote:
-      "I really appreciate the workers and staff for keeping the store running smoothly. They made us feel reassured and comfortable.",
-  },
-  {
-    id: 6,
-    name: "Sagar Sharma",
-    location: "Pune",
-    quote:
-      "Best place to get your laundry done. Not just dry cleaning, but also curtains, carpets, soft toys, and even sneaker cleaning.",
-  },
-  {
-    id: 7,
-    name: "Uzair Delair",
-    location: "Hyderabad",
-    quote:
-      "Overall excellent service from start to finish. Proper professionals with great knowledge of fabrics, cleaning, and customer service.",
-  },
-  {
-    id: 8,
-    name: "Akshara Tarkas",
-    location: "Ahmedabad",
-    quote:
-      "The laundry services are great. Their packing and delivery options are really nice. The best service around.",
   },
 ];
 
