@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Button } from "./ui/button";
+import LogoMark from "./LogoMark";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -58,12 +59,7 @@ const Header = () => {
           className="flex items-center gap-2 group"
           aria-label="Go to Home"
         >
-          <span
-            className="text-2xl md:text-3xl tracking-[0.25em] text-white font-light"
-            style={{ fontFamily: "'Cormorant Garamond', serif" }}
-          >
-            BLANQO
-          </span>
+          <LogoMark />
         </button>
 
         <nav className="hidden lg:flex items-center gap-9">
