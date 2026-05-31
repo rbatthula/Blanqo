@@ -111,10 +111,10 @@ const ContactBlock = () => (
         Email
       </span>
       <a
-        href="mailto:help@blanqo.in"
+        href="mailto:hello@blanqo.in"
         className="text-[#0b1c2c] hover:text-[#8a6f3e] transition-colors"
       >
-        help@blanqo.in
+        hello@blanqo.in
       </a>
     </div>
     <div>

@@ -448,7 +448,7 @@ const FAQs = () => {
               </div>
             </a>
             <a
-              href="mailto:help@blanqo.in"
+              href="mailto:hello@blanqo.in"
               className="flex items-start gap-4 bg-white p-5 border border-transparent hover:border-[#c9a96e]/40 transition-colors group"
             >
               <Mail className="w-5 h-5 text-[#8a6f3e] mt-0.5" strokeWidth={1.5} />
@@ -457,7 +457,7 @@ const FAQs = () => {
                   Email
                 </p>
                 <p className="text-[#0b1c2c] text-lg mt-1 group-hover:text-[#8a6f3e] transition-colors">
-                  help@blanqo.in
+                  hello@blanqo.in
                 </p>
               </div>
             </a>

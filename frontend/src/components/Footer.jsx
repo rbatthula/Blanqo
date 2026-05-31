@@ -111,8 +111,8 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-[#c9a96e] flex-shrink-0" strokeWidth={1.5} />
-                <a href="mailto:help@blanqo.in" className="hover:text-[#c9a96e]">
-                  help@blanqo.in
+                <a href="mailto:hello@blanqo.in" className="hover:text-[#c9a96e]">
+                  hello@blanqo.in
                 </a>
               </div>
               <div className="flex items-start gap-3">
