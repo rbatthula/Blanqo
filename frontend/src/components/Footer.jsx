@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Instagram, Facebook, Twitter, Mail, Phone, MapPin, Clock } from "lucide-react";
+import LogoMark from "./LogoMark";
 
 const Footer = () => {
   return (
@@ -8,11 +9,8 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="grid lg:grid-cols-12 gap-12 pb-14 border-b border-white/10">
           <div className="lg:col-span-4">
-            <h3
-              className="text-3xl md:text-4xl tracking-[0.25em] font-light mb-6"
-              style={{ fontFamily: "'Cormorant Garamond', serif" }}
-            >
-              BLANQO
+            <h3 className="mb-6">
+              <LogoMark imgClassName="h-9 md:h-10" />
             </h3>
             <p className="text-white/60 leading-relaxed max-w-sm mb-6">
               Premium garment care crafted with precision. Doorstep pickup,
