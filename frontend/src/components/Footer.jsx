@@ -12,7 +12,7 @@ const Footer = () => {
               className="text-3xl md:text-4xl tracking-[0.25em] font-light mb-6"
               style={{ fontFamily: "'Cormorant Garamond', serif" }}
             >
-              BLAN<span className="text-[#c9a96e]">Q</span>O
+              BLANQO
             </h3>
             <p className="text-white/60 leading-relaxed max-w-sm mb-6">
               Premium garment care crafted with precision. Doorstep pickup,
