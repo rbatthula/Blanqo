@@ -17,10 +17,10 @@ const Cities = () => {
             className="text-4xl md:text-5xl lg:text-6xl font-light text-[#0b1c2c] leading-[1.1] mb-5"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
-            Now Serving <span className="italic text-[#8a6f3e]">Hyderabad</span>
+            Now Serving <span className="italic text-[#8a6f3e]">Kondapur</span>
           </h2>
           <p className="text-[#4a5568] text-base md:text-lg leading-relaxed">
-            Our flagship store is now open. More cities coming soon.
+            Our flagship store is now open. More stores coming soon.
           </p>
         </div>
 
@@ -41,21 +41,28 @@ const Cities = () => {
             <p className="text-[#c9a96e] text-xs tracking-[0.4em] uppercase mb-3">
               Flagship Store
             </p>
-            <h3
-              className="text-4xl md:text-5xl font-light text-[#0b1c2c] mb-3"
-              style={{ fontFamily: "'Cormorant Garamond', serif" }}
+            <a
+              href="https://maps.app.goo.gl/bFozQAKpf627TXjGA"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block group/link"
             >
-              West Hyderabad
-            </h3>
+              <h3
+                className="text-4xl md:text-5xl font-light text-[#0b1c2c] mb-3 group-hover/link:text-[#8a6f3e] transition-colors"
+                style={{ fontFamily: "'Cormorant Garamond', serif" }}
+              >
+                Kondapur
+              </h3>
+            </a>
             <p className="text-[#4a5568] text-sm md:text-base leading-relaxed max-w-md mx-auto">
-              Visit our boutique garment care studio in West Hyderabad — where
-              every piece is treated with precision and care.
+              Visit our boutique garment care studio in Kondapur — where every
+              piece is treated with precision and care.
             </p>
 
             <div className="mt-8 inline-flex items-center gap-3 text-[#0b1c2c]">
               <Sparkles className="w-4 h-4 text-[#c9a96e]" strokeWidth={1.5} />
               <span className="text-xs tracking-[0.3em] uppercase">
-                More cities opening soon
+                More stores coming soon
               </span>
               <Sparkles className="w-4 h-4 text-[#c9a96e]" strokeWidth={1.5} />
             </div>
