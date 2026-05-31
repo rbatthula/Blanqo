@@ -6,6 +6,7 @@ import Terms from "./pages/Terms";
 import Privacy from "./pages/Privacy";
 import FAQs from "./pages/FAQs";
 import { Toaster } from "./components/ui/toaster";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/faqs" element={<FAQs />} />
         </Routes>
+        <WhatsAppButton />
       </BrowserRouter>
       <Toaster />
     </div>
