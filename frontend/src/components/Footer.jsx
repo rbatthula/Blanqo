@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Instagram, Facebook, Twitter, Mail, Phone, MapPin } from "lucide-react";
+import { Instagram, Facebook, Twitter, Mail, Phone, MapPin, Clock } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -14,9 +14,12 @@ const Footer = () => {
             >
               BLANQO
             </h3>
-            <p className="text-white/60 leading-relaxed max-w-sm mb-8">
+            <p className="text-white/60 leading-relaxed max-w-sm mb-6">
               Premium garment care crafted with precision. Doorstep pickup,
-              expert cleaning, and fabric-safe finishing across India.
+              expert cleaning, and fabric-safe finishing.
+            </p>
+            <p className="text-white/40 text-xs tracking-wider mb-8">
+              A brand by RASA DYAD ENTERPRISES LLP
             </p>
             <div className="flex items-center gap-3">
               {[Instagram, Facebook, Twitter].map((Icon, i) => (
@@ -52,9 +55,21 @@ const Footer = () => {
             <ul className="space-y-3 text-white/70 text-sm">
               <li className="hover:text-[#c9a96e] transition-colors cursor-pointer">About</li>
               <li className="hover:text-[#c9a96e] transition-colors cursor-pointer">Stores</li>
-              <li className="hover:text-[#c9a96e] transition-colors cursor-pointer">Careers</li>
-              <li className="hover:text-[#c9a96e] transition-colors cursor-pointer">Blog</li>
-              <li className="hover:text-[#c9a96e] transition-colors cursor-pointer">Contact</li>
+              <li>
+                <Link to="/faqs" className="hover:text-[#c9a96e] transition-colors">
+                  FAQs
+                </Link>
+              </li>
+              <li>
+                <Link to="/terms" className="hover:text-[#c9a96e] transition-colors">
+                  Terms & Conditions
+                </Link>
+              </li>
+              <li>
+                <Link to="/privacy" className="hover:text-[#c9a96e] transition-colors">
+                  Privacy Policy
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -64,20 +79,28 @@ const Footer = () => {
             </h4>
             <div className="space-y-4 text-white/70 text-sm">
               <div className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 mt-0.5 text-[#c9a96e]" strokeWidth={1.5} />
-                <span>Flagship Store — Bandra West, Mumbai, Maharashtra 400050</span>
+                <MapPin className="w-4 h-4 mt-0.5 text-[#c9a96e] flex-shrink-0" strokeWidth={1.5} />
+                <span className="leading-relaxed">
+                  #205, SMR Vinay Iconia Plaza, Botanical Garden Road,
+                  Kondapur, Sri Maruthi Nagar Colony, Gachibowli,
+                  Serilingampalle (M), Hyderabad, Telangana – 500019
+                </span>
               </div>
               <div className="flex items-center gap-3">
-                <Phone className="w-4 h-4 text-[#c9a96e]" strokeWidth={1.5} />
-                <a href="tel:+919000343483" className="hover:text-[#c9a96e]">
-                  +91 90003 43483
+                <Phone className="w-4 h-4 text-[#c9a96e] flex-shrink-0" strokeWidth={1.5} />
+                <a href="tel:+917075551876" className="hover:text-[#c9a96e]">
+                  +91 70755 51876
                 </a>
               </div>
               <div className="flex items-center gap-3">
-                <Mail className="w-4 h-4 text-[#c9a96e]" strokeWidth={1.5} />
-                <a href="mailto:care@blanqo.in" className="hover:text-[#c9a96e]">
-                  care@blanqo.in
+                <Mail className="w-4 h-4 text-[#c9a96e] flex-shrink-0" strokeWidth={1.5} />
+                <a href="mailto:help@blanqo.in" className="hover:text-[#c9a96e]">
+                  help@blanqo.in
                 </a>
+              </div>
+              <div className="flex items-start gap-3">
+                <Clock className="w-4 h-4 mt-0.5 text-[#c9a96e] flex-shrink-0" strokeWidth={1.5} />
+                <span>Mon – Sat · 10:00 AM – 7:00 PM</span>
               </div>
             </div>
           </div>
@@ -88,11 +111,14 @@ const Footer = () => {
             © {new Date().getFullYear()} Blanqo. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
-            <a href="#" className="hover:text-[#c9a96e] transition-colors">
+            <Link to="/privacy" className="hover:text-[#c9a96e] transition-colors">
               Privacy Policy
-            </a>
+            </Link>
             <Link to="/terms" className="hover:text-[#c9a96e] transition-colors">
               Terms & Conditions
+            </Link>
+            <Link to="/faqs" className="hover:text-[#c9a96e] transition-colors">
+              FAQs
             </Link>
           </div>
         </div>
