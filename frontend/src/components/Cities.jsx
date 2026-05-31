@@ -17,7 +17,7 @@ const Cities = () => {
             className="text-4xl md:text-5xl lg:text-6xl font-light text-[#0b1c2c] leading-[1.1] mb-5"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
-            Now Serving <span className="italic text-[#8a6f3e]">Kondapur</span>
+            Now Serving <span className="italic text-[#8a6f3e]">Hyderabad</span>
           </h2>
           <p className="text-[#4a5568] text-base md:text-lg leading-relaxed">
             Our flagship store is now open. More stores coming soon.
