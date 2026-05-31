@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
+import { useNavigate, useLocation } from "react-router-dom";
 import { Button } from "./ui/button";
 
 const navLinks = [
@@ -14,6 +15,8 @@ const navLinks = [
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -23,8 +26,22 @@ const Header = () => {
 
   const scrollTo = (href) => {
     setOpen(false);
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: href } });
+      return;
+    }
     const el = document.querySelector(href);
     if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    else window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const goHome = () => {
+    setOpen(false);
+    if (location.pathname !== "/") {
+      navigate("/");
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
   };
 
   return (
@@ -37,8 +54,9 @@ const Header = () => {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
         <button
-          onClick={() => scrollTo("#home")}
+          onClick={goHome}
           className="flex items-center gap-2 group"
+          aria-label="Go to Home"
         >
           <span
             className="text-2xl md:text-3xl tracking-[0.25em] text-white font-light"
