@@ -12,7 +12,7 @@ const Footer = () => {
               className="text-3xl md:text-4xl tracking-[0.25em] font-light mb-6"
               style={{ fontFamily: "'Cormorant Garamond', serif" }}
             >
-              BLANQO
+              BLAN<span className="text-[#c9a96e]">Q</span>O
             </h3>
             <p className="text-white/60 leading-relaxed max-w-sm mb-6">
               Premium garment care crafted with precision. Doorstep pickup,
@@ -77,14 +77,31 @@ const Footer = () => {
             <h4 className="text-xs tracking-[0.3em] uppercase text-[#c9a96e] mb-5">
               Get In Touch
             </h4>
-            <div className="space-y-4 text-white/70 text-sm">
+            <div className="space-y-5 text-white/70 text-sm">
               <div className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 mt-0.5 text-[#c9a96e] flex-shrink-0" strokeWidth={1.5} />
-                <span className="leading-relaxed">
-                  #205, SMR Vinay Iconia Plaza, Botanical Garden Road,
-                  Kondapur, Sri Maruthi Nagar Colony, Gachibowli,
-                  Serilingampalle (M), Hyderabad, Telangana – 500019
-                </span>
+                <div>
+                  <p className="text-[10px] tracking-[0.3em] uppercase text-[#c9a96e] mb-1">
+                    Outlet
+                  </p>
+                  <p className="leading-relaxed">
+                    #205, SMR Vinay Iconia Plaza, Botanical Garden Road,
+                    Kondapur, Sri Maruthi Nagar Colony, Gachibowli,
+                    Serilingampalle (M), Hyderabad, Telangana – 500019
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <MapPin className="w-4 h-4 mt-0.5 text-[#c9a96e] flex-shrink-0" strokeWidth={1.5} />
+                <div>
+                  <p className="text-[10px] tracking-[0.3em] uppercase text-[#c9a96e] mb-1">
+                    Regd. Office
+                  </p>
+                  <p className="leading-relaxed">
+                    B Block, Flat 410, Maruthi Elite Gated Community
+                    Apartments, Nizampet, Hyderabad – 500090
+                  </p>
+                </div>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-[#c9a96e] flex-shrink-0" strokeWidth={1.5} />
